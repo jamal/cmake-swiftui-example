@@ -10,8 +10,7 @@ add_executable(${NAME} MACOSX_BUNDLE
 
 find_library(SWIFTUI_LIBRARY SwiftUI)
 target_link_libraries(${NAME} PRIVATE
-    ${CORE_FOUNDATION_LIBRARY}
-    ${AUDIO_UNIT_LIBRARY}
+    ${SWIFTUI_LIBRARY}
 )
 
 set_target_properties(${NAME} PROPERTIES
